@@ -1,0 +1,386 @@
+body {
+  background-color: rgba(214, 223, 245, 0.63);
+}
+.bg-light {
+  background-color: #430f58 !important;
+}
+.navbar-light .navbar-brand {
+  color: #d5def5;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #d5def5;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #d5def5;
+}
+li.nav-item {
+  color: #8594e4;
+}
+
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/photo_2022-12-09_22-10-36.jpg");
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.display-4 {
+  color: #d5def5;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+.lead {
+  color: #6643b5;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Share Tech Mono", monospace;
+  line-height: 1em;
+  word-spacing: -0.1em;
+  letter-spacing: -0.05em;
+  margin-left: 10px;
+}
+.card-body {
+  background-color: rgba(102, 67, 182, 0.74);
+}
+.transition {
+  opacity: 50%;
+}
+.transition:hover {
+  opacity: 100%;
+}
+.card-title {
+  color: #430f58;
+}
+
+.card-text {
+  color: #6643b5;
+}
+.work {
+  color: #430f58;
+  margin-bottom: 20px;
+}
+.line {
+  background-color: #430f58;
+  color: #430f58;
+  height: 2px;
+}
+
+.description {
+  color: #394898;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 190px;
+}
+.skill {
+  margin-left: 190px;
+}
+.badge {
+  font-size: 20px;
+  background-color: #6643b5;
+  color: #d5def5;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+main {
+  margin: 0 15px;
+}
+
+h1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "Share Tech Mono", monospace;
+  line-height: 1em;
+  word-spacing: -0.1em;
+  letter-spacing: -0.05em;
+  transition: 0.2s all ease;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  color: #d5def5;
+  font-size: 2.2em;
+}
+
+.content {
+  margin-left: 60px;
+}
+h1 span {
+  background-color: #6643b5;
+  padding: 5px 7px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.subtext {
+  position: relative;
+  border-radius: 10px;
+  background: #8594e4;
+  border: 1px solid;
+  padding: 13px;
+  line-height: 1.5em;
+  max-width: 95%;
+  margin-bottom: 20px;
+  border-color: #6643b5;
+}
+.subtext:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: #6643b5;
+  left: 1.2em;
+  height: 1.2em;
+  top: calc(-1.2em - 1px);
+}
+
+.hex,
+.hex:before,
+.hex:after {
+  height: 1em;
+  width: 0.6em;
+  border: solid;
+  border-width: 2px 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border-color: #6643b5;
+}
+
+.hex {
+  margin-right: 0.5em;
+}
+
+.hex:before,
+.hex:after {
+  content: "";
+  position: absolute;
+  margin-top: -1px;
+  margin-right: 1px;
+}
+.hex:before {
+  transform: rotate(60deg);
+}
+.hex:after {
+  transform: rotate(-62deg);
+}
+
+.hex.moved {
+  transform: rotate(30deg);
+}
+.me {
+  color: #430f58;
+  font-weight: 600;
+}
+.grid {
+  display: grid;
+  max-width: 97%;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+}
+a.nav-link {
+  color: #8594e4;
+}
+
+.media {
+  text-align: center;
+  font-size: 20px;
+  color: #430f58;
+  margin-bottom: 5px;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #430f58;
+  min-height: 80px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+.social-link {
+  font-size: 1.5rem;
+  color: #d5def5;
+
+  display: inline-block;
+}
+.social-link:hover {
+  color: #8594e4;
+}
+.social-icon__link {
+  font-size: 2rem;
+  color: #d5def5;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+  color: #8594e4;
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #d5def5;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+  color: #8594e4;
+}
+
+.footer p {
+  color: #d5def5;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+@media only screen and (max-width: 1254px) {
+  #badges {
+    position: flex;
+    border-radius: 10px;
+    background: #8594e4;
+    border: 1px solid;
+    padding: 13px;
+    line-height: 1.5em;
+    width: 1000px;
+    margin-bottom: 20px;
+    border-color: #6643b5;
+  }
+  .badge {
+    font-size: 14px;
+  }
+  #badges:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: #6643b5;
+    left: 1.1em;
+    height: 1.2em;
+    top: calc(-1.2em - 1px);
+  }
+
+  .social-link {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+  .subtext:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: #6643b5;
+    left: 1.1em;
+    height: 1.2em;
+    top: calc(-1.2em - 1px);
+  }
+  .me {
+    font-size: 12px;
+  }
+  .display-4 {
+    color: #d5def5;
+    font-weight: 700;
+    margin-top: 100px;
+    font-size: 40px;
+  }
+
+  .lead {
+    color: #6643b5;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Share Tech Mono", monospace;
+    line-height: 1em;
+    word-spacing: -0.1em;
+    letter-spacing: -0.05em;
+    margin-left: 10px;
+  }
+  .footer {
+    position: relative;
+    width: 100%;
+    background: #430f58;
+    min-height: 80px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .social-icon,
+  .menu1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+  }
+
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+
+  .social-icon__link {
+    font-size: 1.5rem;
+    color: #d5def5;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+    color: #8594e4;
+  }
+
+  .menu__link {
+    font-size: 1rem;
+    color: #d5def5;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+
+  .menu__link:hover {
+    opacity: 1;
+    color: #8594e4;
+  }
+
+  .footer p {
+    color: #d5def5;
+    margin: 15px 0 10px 0;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+}
