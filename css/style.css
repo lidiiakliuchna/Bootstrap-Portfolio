@@ -109,7 +109,8 @@ h1 {
 }
 
 .content {
-  margin-left: 60px;
+  margin-left: 40px;
+  margin-right: 0;
 }
 h1 span {
   background-color: #6643b5;
@@ -353,11 +354,6 @@ a.nav-link {
     font-weight: 300;
   }
 
-  .menu__link:hover {
-    opacity: 1;
-    color: #8594e4;
-  }
-
   .footer p {
     color: #d5def5;
     margin: 15px 0 10px 0;
@@ -400,14 +396,16 @@ a.nav-link {
 }
 @media only screen and (max-width: 489px) {
   .badge {
-    font-size: 10px;
+    font-size: 5px;
+    margin: 0;
   }
 
   .social-link {
-    font-size: 10px;
+    font-size: 5px;
+    padding: 0;
   }
   h1 {
-    font-size: 20px;
+    font-size: 10px;
   }
   .subtext:before {
     content: "";
@@ -424,5 +422,68 @@ a.nav-link {
     grid-template-columns: 50% 50%;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  #main {
+    padding: 5px;
+  }
+  .hex,
+  .hex:before,
+  .hex:after {
+    display: none;
+  }
+
+  .hex.moved {
+    display: none;
+  }
+  .footer {
+    position: relative;
+    width: 100%;
+    background: #430f58;
+    min-height: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .social-icon,
+  .menu1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+  }
+
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+
+  .social-icon__link {
+    font-size: 0.8rem;
+    color: #d5def5;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+  .menu__link {
+    font-size: 0.5rem;
+    color: #d5def5;
+
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+
+  .footer p {
+    color: #d5def5;
+    margin: 15px 0 10px 0;
+    font-size: 0.5rem;
+    font-weight: 300;
   }
 }
