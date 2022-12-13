@@ -1,5 +1,6 @@
 body {
   background-color: rgba(214, 223, 245, 0.63);
+  margin: 0;
 }
 .bg-light {
   background-color: #430f58 !important;
@@ -263,28 +264,8 @@ a.nav-link {
   font-weight: 300;
 }
 @media only screen and (max-width: 1254px) {
-  #badges {
-    position: flex;
-    border-radius: 10px;
-    background: #8594e4;
-    border: 1px solid;
-    padding: 13px;
-    line-height: 1.5em;
-    width: 1000px;
-    margin-bottom: 20px;
-    border-color: #6643b5;
-  }
   .badge {
     font-size: 14px;
-  }
-  #badges:before {
-    content: "";
-    position: absolute;
-    width: 1px;
-    background: #6643b5;
-    left: 1.1em;
-    height: 1.2em;
-    top: calc(-1.2em - 1px);
   }
 
   .social-link {
@@ -415,5 +396,33 @@ a.nav-link {
 
   .hex.moved {
     transform: rotate(27deg);
+  }
+}
+@media only screen and (max-width: 489px) {
+  .badge {
+    font-size: 10px;
+  }
+
+  .social-link {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .subtext:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: #6643b5;
+    left: 0.95em;
+    height: 1.2em;
+    top: calc(-1.2em - 1px);
+  }
+  .grid {
+    display: grid;
+    max-width: 97%;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
